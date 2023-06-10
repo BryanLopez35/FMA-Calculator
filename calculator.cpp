@@ -1,21 +1,25 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+// Función para calcular la fuerza dado la masa y aceleración
 float calcularFuerza(float masa, float aceleracion)
 {
     return masa * aceleracion;
 }
 
+// Función para calcular la masa dado la fuerza y aceleración
 float calcularMasa(float fuerza, float aceleracion)
 {
     return fuerza / aceleracion;
 }
 
+// Función para calcular la aceleración dado la fuerza y masa
 float calcularAceleracion(float fuerza, float masa)
 {
     return fuerza / masa;
 }
 
+// Función para mostrar el menú de opciones
 void mostrarMenu()
 {
     printf("¿Qué desea calcular?\n");
@@ -25,6 +29,7 @@ void mostrarMenu()
     printf("4. Salir\n");
 }
 
+// Función para obtener la opción seleccionada por el usuario
 int obtenerOpcion()
 {
     int opcion;
@@ -33,11 +38,13 @@ int obtenerOpcion()
     return opcion;
 }
 
+// Función para limpiar la pantalla
 void limpiarPantalla()
 {
     system("clear");
 }
 
+// Función para calcular la fuerza mediante interacción con el usuario
 void calcularFuerzaMenu()
 {
     float masa, aceleracion;
@@ -49,6 +56,7 @@ void calcularFuerzaMenu()
     printf("La fuerza es: %.2f N\n", fuerza);
 }
 
+// Función para calcular la masa mediante interacción con el usuario
 void calcularMasaMenu()
 {
     float fuerza, aceleracion;
@@ -60,6 +68,7 @@ void calcularMasaMenu()
     printf("La masa es: %.2f Kg\n", masa);
 }
 
+// Función para calcular la aceleración mediante interacción con el usuario
 void calcularAceleracionMenu()
 {
     float fuerza, masa;
